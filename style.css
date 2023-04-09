@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  border: 2px solid hsla(263, 75%, 66%, 0.726);
+}
+
+*:focus:not(:focus-visible) {
+  border: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -127,7 +136,6 @@ body {
 .attribution a:active {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
-
   transform: translateY(-2px) scale(1.05);
 }
 
